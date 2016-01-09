@@ -2,13 +2,14 @@
 
 [motleyzoo.org](http://motleyzoo.org/)
 
-Original website:
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Screenshot of original ")
+Screenshot of original website:
+![alt text](https://raw.githubusercontent.com/Catenology/motleyzoo/master/design/screenshot-oldsite.png "Screenshot of original site")
 
 ## Look&Feel
+
 > Below style and imagery are for bootstraping the webstie, and are subject to change
 
- ### Colors
+### Colors
 - <span style="background-color:#F5CB5C; color: #000">#F5CB5C</span>	brand-primary
 - <span style="background-color:#B89845; color: #fff">#B89845</span>	brand-primary-shade-1
 - <span style="background-color:#F7D57D; color: #000">#F7D57D</span>	brand-primary-shade-2
