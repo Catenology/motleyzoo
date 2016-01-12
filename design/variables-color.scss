@@ -1,13 +1,9 @@
 $brand-primary: #F5CB5C; //rgba(245, 203, 92, 100)
-$brand-primary-shade-1: #B89845; //rgba(184, 152, 69, 1)
-$brand-primary-shade-2: #F7D57D; //rgba(247, 213, 125, 1)
-$brand-primary-shade-3: #FBEABE; //rgba(251, 234, 190, 1)
-$brand-primary-shade-4: #E8EDDF; //rgba(232, 237, 223, 1)
+$brand-primary-dark: darken($brand-primary, 20%);
+$brand-primary-light: lighten($brand-primary, 20%);
 $brand-secondary: #242423; //rgba(36, 36, 35, 100)
-$brand-secondary-shade-1: #121212; //rgba(18, 18, 18, 100)
-$brand-secondary-shade-2: #333533; //rgba(51, 53, 51, 100)
-$brand-secondary-shade-3: #CFDBD5; //rgba(207, 219, 213, 1)
-$brand-secondary-shade-4: #ECF1EE; //rgba(236, 241, 238, 1)
+$brand-secondary-dark: darken($brand-secondary, 20%);
+$brand-secondary-light: lighten($brand-secondary, 20%);
 $brand-danger: #DB4A3C; //rgba(219, 74, 60, 1)
 $brand-success: #90CA74; //rgba(144, 202, 116, 1)
 $brand-warning: #F5CB5C; //rgba(245, 203, 92, 1)
