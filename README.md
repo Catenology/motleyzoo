@@ -16,6 +16,8 @@ Screenshot of original website:
 - <span style="background-color:#90CA74; color: #000">#90CA74</span>	brand-success
 - <span style="background-color:#F5CB5C; color: #000">#F5CB5C</span>	brand-warning
 - <span style="background-color:#4CB7DB; color: #000">#4CB7DB</span>	brand-info
+- dark shade: darken, 20%
+- light shade: lighten, 20%
 
 ## Content
 

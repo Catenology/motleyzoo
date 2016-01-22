@@ -4,7 +4,15 @@ $brand-primary-light: lighten($brand-primary, 20%);
 $brand-secondary: #242423; //rgba(36, 36, 35, 100)
 $brand-secondary-dark: darken($brand-secondary, 20%);
 $brand-secondary-light: lighten($brand-secondary, 20%);
-$brand-danger: #DB4A3C; //rgba(219, 74, 60, 1)
+$brand-danger: #DB4A3C; //rgba(219, 74, 60, 1);
+$brand-danger-dark: darken($brand-danger, 20%);
+$brand-danger-light: lighten($brand-danger, 20%);
 $brand-success: #90CA74; //rgba(144, 202, 116, 1)
+$brand-success-dark: darken($brand-success, 20%);
+$brand-success-light: lighten($brand-success, 20%);
 $brand-warning: #F5CB5C; //rgba(245, 203, 92, 1)
+$brand-warning-dark: darken($brand-warning, 20%);
+$brand-warning-light: lighten($brand-warning, 20%);
 $brand-info: #4CB7DB; //rgba(76, 183, 219, 1)
+$brand-info-dark: darken($brand-info, 20%);
+$brand-info-light: lighten($brand-info, 20%);
