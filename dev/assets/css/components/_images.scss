@@ -1,0 +1,53 @@
+// _images.scss
+
+img {
+	&.img-hero {
+		max-width: 100%;
+		height: auto;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&.img-story {
+		max-height: 100vw;
+		max-width: 100%;
+	}
+}
+
+.img-thumbnail-wrapper {
+	display: inline-block;
+	position: relative;
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+
+	&>img {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		height: 100%;
+		width: auto;
+		-webkit-transform: translate(-50%,-50%);
+		-ms-transform: translate(-50%,-50%);
+		transform: translate(-50%,-50%);
+	}
+
+	.portrait {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.circle {
+	border-radius: 50%;
+}
+
+.sticker {
+	box-shadow: 0 0 0 0.5em #fff, 0 0 0 0.6em #ccc;
+}
+
+.sticker-alt {
+	border-radius: 50%;
+	box-shadow: 0 0 0 0.5em #ccc;
+}

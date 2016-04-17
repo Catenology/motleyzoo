@@ -1,0 +1,77 @@
+// _nav.scss
+.navbar {
+	position: relative;
+	background-color: $color-charcoal-grey;
+  min-height: 120px;
+	a {
+		color: #fff;
+		font-size: $font-size-md;
+		text-decoration: none;
+		white-space: nowrap;
+	}
+
+	ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	li {
+		padding: 8px 16px;
+	}
+}
+.navbar-nav {
+	position: absolute;
+	bottom: 0;
+	margin: 0;
+}
+@media (min-width: $breakpoint-desktop-hd) {
+  .navbar {
+    min-height: 200px;
+  }
+}
+
+@media (max-width: $breakpoint-desktop) {
+  .navbar {
+    min-height: 50px;
+  }
+  .navbar-nav {
+    display: none;
+  }
+}
+
+.navbar-item {
+	display: inline-block;
+	position: relative;
+
+	&:hover {
+		cursor: pointer;
+
+		.navbar-dropdown {
+			display: block;
+		}
+	}
+}
+
+.navbar-dropdown {
+	background-color: $color-charcoal-grey;
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	min-width: 100%;
+	z-index: 99999;
+	box-shadow: 0 4px 12px fade-out($color-charcoal-grey, .7);
+}
+
+.navbar-item,
+.navbar-menu-item {
+	transition: all 0.2s ease;
+
+	&:hover {
+		background-color: fade-out(#fff, .9);
+
+		&>a {
+			color: $color-brand;
+		}
+	}
+}

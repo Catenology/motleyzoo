@@ -1,0 +1,37 @@
+// _buttons.scss
+
+.btn {
+	background: none;
+	border: 2px solid transparent;
+	text-decoration: none;
+	min-width: 160px;
+	min-height: 40px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	outline: 0;
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	&.btn-sm {
+		min-width: 120px;
+		min-height: 30px;
+	}
+
+	&.btn-lg {
+		min-width: 200px;
+		min-height: 50px;
+		font-size: $font-size-lg;
+		font-weight: 400;
+	}
+
+	&.btn-default {
+		@include button-hover(#fff, $color-charcoal-grey);
+	}
+
+	&.btn-inverse {
+		@include button-hover($color-brand, #fff);
+	}
+}
