@@ -1,5 +1,11 @@
 // _mixins.scss
 
+@mixin media-query($breakpoint) {
+     @media screen and (max-width: $breakpoint){
+        @content;
+    }
+}
+
 @mixin button-hover($color-bg, $color-fg) {
 	border-color: $color-bg;
 	color: $color-bg;

@@ -1,77 +1,80 @@
 // _nav.scss
+//use checkbox to toggle collapse
 .navbar {
-	position: relative;
-	background-color: $color-charcoal-grey;
-  min-height: 120px;
-	a {
-		color: #fff;
-		font-size: $font-size-md;
-		text-decoration: none;
-		white-space: nowrap;
-	}
-
-	ul {
-		list-style: none;
-		padding: 0;
-	}
-
-	li {
-		padding: 8px 16px;
-	}
+    background-color: $color-charcoal-grey;
+    min-height: 120px;
+    width: 100%;
+    position: relative;
+		a {
+        font-size: $font-size-lg;
+        text-decoration: none;
+        &,
+        &:visited {
+            color: #fff;
+        }
+        &.active,
+        &.active:active,
+        &.active:focus,
+        &.active:hover,
+        &:active,
+        &:focus,
+        &:hover {
+            color: $color-brand;
+        }
+    }
+}
+.navbar-hamburger {
+    display: none;
+		text-align: center;
+		padding: 16px;
+		float: right;
 }
 .navbar-nav {
-	position: absolute;
-	bottom: 0;
-	margin: 0;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+    & > li {
+        display: inline-block;
+        padding: 16px;
+    }
+    .dropdown {
+        position: relative;
+    }
+    .dropdown-menu {
+        position: absolute;
+        list-style: none;
+        padding: 0;
+        right: 0;
+        top: 100%;
+        background-color: $color-charcoal-grey;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease;
+        min-width: 100%;
+        box-shadow: 0 0 4px $color-charcoal-grey;
+        & > li {
+            padding: 16px;
+            white-space: nowrap;
+            min-width: inherit;
+        }
+    }
+    .dropdown:hover {
+        cursor: pointer;
+        .dropdown-menu {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
 }
-@media (min-width: $breakpoint-desktop-hd) {
-  .navbar {
-    min-height: 200px;
-  }
-}
-
-@media (max-width: $breakpoint-desktop) {
-  .navbar {
-    min-height: 50px;
-  }
-  .navbar-nav {
-    display: none;
-  }
-}
-
-.navbar-item {
-	display: inline-block;
-	position: relative;
-
-	&:hover {
-		cursor: pointer;
-
-		.navbar-dropdown {
-			display: block;
-		}
+@include media-query($breakpoint-lg) {
+	.navbar-hamburger {
+		display: block;
 	}
-}
-
-.navbar-dropdown {
-	background-color: $color-charcoal-grey;
-	display: none;
-	position: absolute;
-	top: 100%;
-	left: 0;
-	min-width: 100%;
-	z-index: 99999;
-	box-shadow: 0 4px 12px fade-out($color-charcoal-grey, .7);
-}
-
-.navbar-item,
-.navbar-menu-item {
-	transition: all 0.2s ease;
-
-	&:hover {
-		background-color: fade-out(#fff, .9);
-
-		&>a {
-			color: $color-brand;
-		}
+	.navbar {
+		min-height: 64px;
+	}
+	.navbar-nav {
+		display: none;
 	}
 }
