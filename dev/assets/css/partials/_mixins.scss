@@ -21,3 +21,11 @@
 		border-color: darken($color-bg, 10%);
 	}
 }
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}

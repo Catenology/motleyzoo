@@ -1,0 +1,41 @@
+// _utilities.scss
+/* Clearfix */
+.cf:after,
+.cf:before {
+    content: "";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+.pull-left {
+    display: block;
+    float: left;
+}
+.pull-right {
+    display: block;
+    float: right;
+}
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.text-justify {
+    text-align: justify;
+}
+ul {
+    &.list-unstyled {
+        padding: 0;
+        list-style: none;
+    }
+    &.list-inline {
+        & > li {
+            display: inline-block;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.link, .link > span {
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 700;
+	border-bottom: .1em dashed;
+	transition: all .3s ease;
+	&,&:visited {
+		color: inherit;
+	}
+	&:hover, &:focus {
+		cursor: auto;
+		background-color: #fff;
+		border-bottom: .1em solid;
+		color: $color-brand;
+	}
+}

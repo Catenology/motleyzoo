@@ -15,11 +15,9 @@ img {
 	}
 }
 
-.img-thumbnail-wrapper {
+.img-thumbnail {
 	display: inline-block;
 	position: relative;
-	width: 150px;
-	height: 150px;
 	overflow: hidden;
 
 	&>img {
@@ -36,6 +34,18 @@ img {
 	.portrait {
 		width: 100%;
 		height: auto;
+	}
+	&.sm {
+		width: 100px;
+		height: 100px;
+	}
+	&.md {
+		width: 150px;
+		height: 150px;
+	}
+	&.lg {
+		width: 200px;
+		height: 200px;
 	}
 }
 

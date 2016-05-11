@@ -6,6 +6,7 @@
 	text-decoration: none;
 	min-width: 160px;
 	min-height: 40px;
+	font-size: $font-size-base;
 	font-weight: 700;
 	text-align: center;
 	text-transform: uppercase;
@@ -18,17 +19,18 @@
 	&.btn-sm {
 		min-width: 120px;
 		min-height: 30px;
+		font-size: $font-size-sm;
 	}
 
 	&.btn-lg {
 		min-width: 200px;
 		min-height: 50px;
-		font-size: $font-size-lg;
+		font-size: $font-size-base * 1.2;
 		font-weight: 400;
 	}
 
 	&.btn-default {
-		@include button-hover(#fff, $color-charcoal-grey);
+		@include button-hover(#fff, $color-charcoal);
 	}
 
 	&.btn-inverse {

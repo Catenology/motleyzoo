@@ -1,0 +1,114 @@
+.carousel {
+	a {
+		&,
+		&:visited {
+			color: #fff;
+		}
+	}
+}
+.carousel-images {
+	background-color: $color-charcoal;
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		& > li {
+			display: inline-block;
+		}
+	}
+	img {
+		max-width: 100%;
+	}
+}
+.carousel-control {
+	a {
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		width: $spacing-unit * 2;
+		height: inherit;
+		text-align: center;
+		height: 100%;
+		background-color: fade-out($color-offwhite, .9);
+		&:hover {
+			cursor: pointer;
+			background-color: fade-out($color-offwhite, .7);
+		}
+		&:nth-child(1) {
+			left: 0;
+		}
+		&:nth-child(2) {
+			right: 0;
+		}
+		span {
+			position: absolute;
+			top: 50%;
+		}
+	}
+}
+.carousel-bullets {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	ul {
+		list-style: none;
+		padding: 0;
+		text-align: center;
+		& > li {
+			display: inline-block;
+		}
+	}
+	span {
+		content: "";
+		display: block;
+		position: relative;
+		width: 16px;
+		height: 16px;
+		border: 2px solid #fff;
+		border-radius: 50%;
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 12px;
+			height: 12px;
+			top: 2px;
+			left: 2px;
+			border-radius: 50%;
+			@include transition(all, .3s, ease);
+		}
+		&.active,
+		&:hover {
+			&:after {
+				background-color: #fff;
+			}
+		}
+	}
+}
+.carousel-subtitle {
+	position: absolute;
+	max-height: 0;
+	bottom: 0;
+	overflow: hidden;
+	background-color: fade-out($color-charcoal, .3);
+	color: #fff;
+	@include transition(max-height, 1s, cubic-bezier(.17,.67,.83,.67));
+	h5,
+	p {
+		padding-left: $spacing-unit;
+		padding-right: $spacing-unit;
+	}
+	h5 {
+		padding-top: $spacing-unit/2;
+	}
+	p {
+		padding-bottom: $spacing-unit /2;
+	}
+}
+.carousel {
+	&:hover {
+		.carousel-subtitle {
+			max-height: 100%;
+		}
+	}
+}

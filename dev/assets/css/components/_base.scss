@@ -1,0 +1,67 @@
+// _base.scss
+body {
+	overflow-x: hidden;
+	margin: 0;
+}
+.content,
+footer {
+	& > div {
+		&:not(.jumbotron) {
+			padding: $spacing-unit;
+		}
+	}
+}
+.jumbotron {
+	background-color: $color-offwhite;
+}
+.features {
+	background-color: $color-brand;
+	color: #fff;
+	text-align: center;
+}
+.feature {
+	float: left;
+	@media (min-width: $breakpoint-xs) {
+		width: 100%;
+	}
+	@media (min-width: $breakpoint-md) {
+		width: 50%;
+	}
+	@media (min-width: $breakpoint-lg) {
+		width: 25%;
+	}
+}
+.feature-icon {
+	padding-top: $spacing-unit;
+	padding-bottom: $spacing-unit /2;
+}
+.feature-description {
+	p {
+		padding-left: $spacing-unit;
+		padding-right: $spacing-unit;
+	}
+}
+.news {
+	background-color: $color-offwhite;
+}
+.news-summary {
+	display: block;
+	width: 100%;
+}
+.news-text,
+.news-thumbnail {
+	display: inline-block;
+	float: left;
+}
+.news-thumbnail {
+	width: 30%;
+}
+.news-text {
+	width: 70%;
+	time {
+		color: lighten($color-charcoal, 40%);
+	}
+	h5 {
+		color: $color-brand;
+	}
+}
